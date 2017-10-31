@@ -1,7 +1,12 @@
 from subprocess import call
+import sys
 import os
 import json
 import shutil
+
+# Allow to use with python 3
+if (sys.version_info > (3, 0)):
+	raw_input = input
 
 # Path to script
 scriptPath = os.path.realpath(__file__)
